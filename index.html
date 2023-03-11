@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,9 +16,31 @@
     </h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form action="" id="survey-form">
-        <input type="text" id="name" required>
-        <input type="email" id="email" required>
-        <input type="number" id="number" required min="10" max="99">
+        <label id="name-label">Name</label>
+        <input placeholder="Name" type="text" id="name" required>
+        
+        <label id="email-label">Email</label>
+        <input placeholder="email" type="email" id="email" required>
+
+        <label id="number-label">Age</label>
+        <input placeholder="Age" type="number" id="number" required min="10" max="99">
+        
+        <select name="" id="dropdown">
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+        </select>
+
+        <input type="radio" name="group1" value="value1" id="">
+        <input type="radio" name="group1" value="value2" id="">
+        <input type="radio" name="group2" value="value3" id="">
+        <input type="radio" name="group2" value="value4" id="">
+        
+        <input type="checkbox" value="box1">
+        <input type="checkbox" value="box2">
+
+        <textarea>Additional Comment</textarea>
+
+        <input type="submit" id="submit">
     </form>
 </body>
 
